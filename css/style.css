@@ -1,0 +1,14 @@
+.container-fluid a img{
+    height:50px;
+    width:50px;
+}
+.carousel-inner img{
+    height: 85vh;
+}
+.bg-mac{
+    background-color: rgba(92, 3, 3, 0.80);
+}
+.carousel-caption{
+    left:-5%;
+    opacity:.5;
+}
