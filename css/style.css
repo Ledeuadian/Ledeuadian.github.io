@@ -1,14 +1,37 @@
+body{
+    font-family: 'Josefin Sans', sans-serif
+}
 .container-fluid a img{
     height:50px;
     width:50px;
 }
-.carousel-inner img{
-    height: 85vh;
-}
+
 .bg-mac{
-    background-color: rgba(92, 3, 3, 0.80);
+    background-color: rgba(239, 226, 217);
 }
 .carousel-caption{
     left:-5%;
     opacity:.5;
 }
+.navbar{
+    font-size:25px;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+.nav-item{
+    border-radius:30%;   
+}
+.marginneg{
+    margin-bottom:-5px;
+    width:120px;
+}
+footer ul li{
+list-style-type: none;
+}
+.socials a img{
+    width:3rem;
+}
+
+
+
+
