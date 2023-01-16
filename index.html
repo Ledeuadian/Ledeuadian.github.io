@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MacCafe</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Oleo+Script:wght@400;700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="position-relative">
     <header class="position-sticky ">
       <marquee behavior="alternate" class="bg-light"><p class="text-center marginneg">Get 50% off on your 1st order</p></marquee>
         <nav class="navbar navbar-expand-lg bg-mac" style="margin-top:-10px;">
@@ -33,10 +34,16 @@
                     <a class="nav-link" href="#aboutUs">About Us</a>
                   </li>
                   <li class="nav-item mx-4">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contactUs">Contact Us</a>
                   </li>
-                  <li class="nav-item mx-4">
-                    <a class="nav-link" href="#">Shop</a>
+                  <li class="nav-item btn-group dropend mb-2 ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu " >
+                      <li><a class="dropdown-item" href="shopTea.html">Drinks</a></li>
+                      <li><a class="dropdown-item" href="shopFood.html">Foods</a></li>
+                    </ul>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -103,17 +110,17 @@
     </section>
 
     <!--=====================2nd section about us================================== -->
-    <section class="2ndSection d-flex flex-column  bg-mac pb-2" id="aboutUs">
-    <div class="d-flex flex-row bg-light">
-      <div class="text-center pt-5" style="width:70%">
+    <section class="2ndSection d-flex flex-column bg-mac pb-2" id="aboutUs">
+    <div class="d-flex flex-row bg-light ">
+      <div class="text-center pt-5 col col-sm-12" style="width:70%">
         <h3 style="color:burlywood">About us</h3>
-        <p class="px-5 fs-4 text">Mac Cafe Infinitea is a food service company established in 2010, specializing in healthy milk tea. The concept is inspired mainly by Asia unique culture of tea drinking which in many Asian countries, is an important part of a ceremony in entertaining customers, that reflects a sign of respect and value for the guests.<br><br>
+        <p class="px-5 fs-4 text-sm-fs-7">Mac Cafe Infinitea is a food service company established in 2010, specializing in healthy milk tea. The concept is inspired mainly by Asia unique culture of tea drinking which in many Asian countries, is an important part of a ceremony in entertaining customers, that reflects a sign of respect and value for the guests.<br><br>
 
         Mac Cafe drinks are guaranteed made from 100% freshly brewed loose-leaf teas of high quality, made exciting by different flavors and mixes for a fun and healthier lifestyle.
           </p>
       </div>
       <div class="d-none d-sm-none d-md-block">
-        <img src="/images/About Us.png" class="img-fluid " style="z-index:2; position:relative;">
+        <img src="/images/About Us.png" class="img-fluid " style="position:relative;">
       </div>
     </div>
     <div class="d-flex flex-row bg-mac" style="margin-top:-200px;">
@@ -129,8 +136,8 @@
     </section>
 
      <!--=====================2nd section Contact================================== -->
-     <section class="container 2ndSection d-flex flex-column bg-light pb-2 pt-5" id="contactUs">
-      <div class="ms-5 d-flex flex-row">
+     <section class="container 2ndSection d-flex flex-column bg-light mb-5 pb-5 pt-5" id="contactUs">
+      <div class="ms-5 d-flex flex-row flex-nowrap">
         <div class="text-start align-self-center pt-5" style="width:70%">
           <h3 style="color:burlywood">Contact Us</h3>
           <p class="px-5 fs-4 text">
@@ -139,26 +146,23 @@
             Located:Captain Jabulin Yañez, Iponan, Cagayan de Oro, Philippines
           </p>
             <br><br>
-          
-          Mac Cafe drinks are guaranteed made from 100% freshly brewed loose-leaf teas of high quality, made exciting by different flavors and mixes for a fun and healthier lifestyle.
-            </p>
         </div>
-        <div>
+        <div class="d-flex d-sm-none d-md-block">
           <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Mac%20Cafe,%20Iponan,%20Cagayan%20de%20Oro,%20Philippines&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
         </div>
       </div>
       </section>
     </main>
-    <footer class="container-fluid d-flex bg-mac p-3 justify-content-between">
+    <footer class="container-fluid d-flex bg-mac p-3 justify-content-between ">
       <form class="float-start" role="search">
         <input class="form-control me-2" type="search" placeholder="enter email address" aria-label="Search">
         <button class="btn btn-outline-danger bg-mac mt-1" type="submit">Subscribe</button>
       </form>
-      <div class="socials d-flex">
-      <ul class ="d-flex flex-row">
-        <li><a href="https://www.facebook.com/mac2014official" target="_Blank"><img src="/images/facebook.png" class="mx-5"></a></li>
-        <li><a href=""><img src="/images/twitter.png" class="mx-2"></a></li>
-        <li><a href="https://www.instagram.com/macofficial.ph/" target="_Blank"><img src="/images/instagram.png" class="mx-5"></li>
+      <div class="socials d-flex flex-nowrap">
+      <ul class ="d-flex flex-row flex-nowrap">
+        <li><a href="https://www.facebook.com/mac2014official" target="_Blank"><img src="/images/facebook.png" class="mx-2 img-fluid"></a></li>
+        <li><a href=""><img src="/images/twitter.png" class="mx-2 img-fluid "></a></li>
+        <li><a href="https://www.instagram.com/macofficial.ph/" target="_Blank"><img src="/images/instagram.png" class="mx-2 img-fluid"></li>
       </ul>
     </div>
     </footer>

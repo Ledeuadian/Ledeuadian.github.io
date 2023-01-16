@@ -1,11 +1,6 @@
 body{
     font-family: 'Josefin Sans', sans-serif
 }
-.container-fluid a img{
-    height:50px;
-    width:50px;
-}
-
 .bg-mac{
     background-color: rgba(239, 226, 217);
 }
@@ -28,10 +23,15 @@ body{
 footer ul li{
 list-style-type: none;
 }
-.socials a img{
-    width:3rem;
+footer .socials a img{
+    width:2rem;
+    height:2rem;
 }
-
-
-
+.container-fluid a img{
+    height:50px;
+    width:50px;
+}
+.drinks .card img{
+    height:25rem;
+}
 
