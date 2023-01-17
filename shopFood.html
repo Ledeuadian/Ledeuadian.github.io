@@ -46,9 +46,7 @@
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <button class="btn btn-outline-light bg-transparent" type="button" style="border:0;"><img src="/images/cart.png"></button>
-                </form>
+                <button class="btn btn-outline-light bg-transparent" type="button" style="border:0;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="/images/cart.png"></button>
               </div>
             </div>
           </nav>
@@ -102,13 +100,34 @@
           <a href="food5.html" class="btn btn-primary  mt-auto ">Details</a>
         </div>
       </div>
-    
-
-
     </div>
     </main>
-      
+    <footer class="container-fluid d-flex bg-mac p-3 justify-content-evenly ">
+      <p class="test-start">Copyright @MacCafe 2023</p>
+      <form class="float-start" role="search">
+        <input class="form-control me-2" type="search" placeholder="enter email address" aria-label="Search">
+        <button class="btn btn-outline-danger bg-mac mt-1" type="submit">Subscribe</button>
+      </form>
+      <div class="socials d-flex flex-nowrap">
+      <ul class ="d-flex flex-row flex-nowrap">
+        <li><a href="https://www.facebook.com/mac2014official" target="_Blank"><img src="/images/facebook.png" class="mx-2 img-fluid"></a></li>
+        <li><a href=""><img src="/images/twitter.png" class="mx-2 img-fluid "></a></li>
+        <li><a href="https://www.instagram.com/macofficial.ph/" target="_Blank"><img src="/images/instagram.png" class="mx-2 img-fluid"></a></li>
+      </ul>
+    </div>
     </footer>
+
+  <!--===============================off Canvass================================================================-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+    
+        </div>
+      </div>
+    </div>
     <script src="script/bootstrap.bundle.min.js"></script>
     <script src="//code.tidio.co/oewlps7fmiwubdnqhkcb5jhb9nmyfw1z.js" async></script>
 </body>

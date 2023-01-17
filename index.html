@@ -46,9 +46,7 @@
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <button class="btn btn-outline-light bg-transparent" type="button" style="border:0;"><img src="/images/cart.png"></button>
-                </form>
+                  <button class="btn btn-outline-light bg-transparent" type="button" style="border:0;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="/images/cart.png"></button>
               </div>
             </div>
           </nav>
@@ -83,14 +81,14 @@
     
     <!--=================Maint Content After Carousel================-->
     <main>
-    <section class="bg-mac pb-2">
-      <div class="d-flex justify-content-center my-2 py-5 container" >
-            <p class="align-self-end pe-5 fs-3 text-center">Tea Time is a chance to slow down, pull back and appreciated our surroundings</p>
-            <img src="/images/logo.png " class="img-fluid shadow-lg p-1 mb-5 bg-body-tertiary " style="width:20rem; border-radius:50%; ">
-            <p class="align-self-end ps-5 fs-3 text-center">Yesterday I really wanted Cookies. Today, I am eating cookies. Follow your dreams.</p>
+    <section class="bg-mac pb-2 ">
+      <div class="d-flex justify-content-center my-2 py-5 container " >
+            <p class="align-self-end pe-5 fs-3 text-center reveal ">Tea Time is a chance to slow down, pull back and appreciated our surroundings</p>
+            <img src="/images/logo.png " class="img-fluid shadow-lg p-1 mb-5 bg-body-tertiary" style="width:20rem; border-radius:50%; ">
+            <p class="align-self-end ps-5 fs-3 text-center reveal">Yesterday I really wanted Cookies. Today, I am eating cookies. Follow your dreams.</p>
       </div>
       <div class="d-flex justify-content-evenly">
-        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 18rem;">
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded reveal" style="width: 18rem;">
           <img src="/images/Cookies.jpg" style="height:15rem"class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cookies</h5>
@@ -98,7 +96,7 @@
             <a href="#" class="btn btn-primary">View Details</a>
           </div>
         </div>
-        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 18rem;">
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded reveal" style="width: 18rem;">
           <img src="/images/Pasta.jpg" style="height:15rem" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Pasta</h5>
@@ -110,7 +108,7 @@
     </section>
 
     <!--=====================2nd section about us================================== -->
-    <section class="2ndSection d-flex flex-column bg-mac pb-2" id="aboutUs">
+    <section class="2ndSection d-flex flex-column bg-mac pb-2 reveal" id="aboutUs">
     <div class="d-flex flex-row bg-light ">
       <div class="text-center pt-5 col col-sm-12" style="width:70%">
         <h3 style="color:burlywood">About us</h3>
@@ -126,7 +124,7 @@
     <div class="d-flex flex-row bg-mac" style="margin-top:-200px;">
       <div class="container-fluid text-center bg-mac mt-5">
         <h1>Enjoy the best at its finest</h1>
-      <div class="d-flex flex-wrap pt-2 justify-content-center">
+      <div class="d-flex flex-wrap pt-2 justify-content-center reveal">
         <img src="/images/ab2.jpg" style="width: 17rem;" class="img-fluid mx-2 shadow p-3 mb-5 bg-body-tertiary rounded">
         <img src="images/ab3.JPG" style="width: 17rem;" class="img-fluid mx-2 shadow p-3 mb-5 bg-body-tertiary rounded">
         <img src="/images/ab1.jpg" style="width: 17rem;" class="img-fluid mx-2 shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -135,8 +133,8 @@
     </div>
     </section>
 
-     <!--=====================2nd section Contact================================== -->
-     <section class="container 2ndSection d-flex flex-column bg-light mb-5 pb-5 pt-5" id="contactUs">
+     <!--=====================3nd section Contact================================== -->
+     <section class="container 2ndSection d-flex flex-column bg-light mb-5 pb-5 pt-5 reveal" id="contactUs">
       <div class="ms-5 d-flex flex-row flex-nowrap">
         <div class="text-start align-self-center pt-5" style="width:70%">
           <h3 style="color:burlywood">Contact Us</h3>
@@ -153,7 +151,8 @@
       </div>
       </section>
     </main>
-    <footer class="container-fluid d-flex bg-mac p-3 justify-content-between ">
+    <footer class="container-fluid d-flex bg-mac p-3 justify-content-evenly ">
+      <p class="test-start">Copyright @MacCafe 2023</p>
       <form class="float-start" role="search">
         <input class="form-control me-2" type="search" placeholder="enter email address" aria-label="Search">
         <button class="btn btn-outline-danger bg-mac mt-1" type="submit">Subscribe</button>
@@ -162,11 +161,26 @@
       <ul class ="d-flex flex-row flex-nowrap">
         <li><a href="https://www.facebook.com/mac2014official" target="_Blank"><img src="/images/facebook.png" class="mx-2 img-fluid"></a></li>
         <li><a href=""><img src="/images/twitter.png" class="mx-2 img-fluid "></a></li>
-        <li><a href="https://www.instagram.com/macofficial.ph/" target="_Blank"><img src="/images/instagram.png" class="mx-2 img-fluid"></li>
+        <li><a href="https://www.instagram.com/macofficial.ph/" target="_Blank"><img src="/images/instagram.png" class="mx-2 img-fluid"></a></li>
       </ul>
     </div>
     </footer>
+
+  <!--===============================off Canvass================================================================-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+    
+        </div>
+      </div>
+    </div>
+
+
     <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
     <script src="//code.tidio.co/oewlps7fmiwubdnqhkcb5jhb9nmyfw1z.js" async></script>
 </body>
 </html>

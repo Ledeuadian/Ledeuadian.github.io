@@ -1,3 +1,12 @@
+@keyframes fadeup{
+    to{
+        opacity:1;
+        margin-bottom:0%;
+    }
+}
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: 'Josefin Sans', sans-serif
 }
@@ -34,4 +43,8 @@ footer .socials a img{
 .drinks .card img{
     height:25rem;
 }
-
+.reveal.active{
+    opacity:0;
+    margin-bottom: -100px;
+    animation: fadeup 3s ease forwards;
+}
