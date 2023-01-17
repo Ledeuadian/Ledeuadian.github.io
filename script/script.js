@@ -17,3 +17,6 @@ function reveal(){
         }
       }
     }
+
+
+    
