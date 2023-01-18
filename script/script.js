@@ -19,4 +19,18 @@ function reveal(){
     }
 
 
-    
+// Saving to local storage
+
+let cartFromLocalStorage = JSON.parse(localStorage.getItem('Order'));
+
+function addToCart(e){ 
+id = e.id;
+items = document.getElementById(id+'Item').querySelectorAll('h3,img,span');
+itemsName = document.getElementById(id+'Name').innerHTML;
+itemImage = items[0].getAttribute("src");
+itemPrice = items[3].innerText; 
+Order = {name: itemsName, image: itemImage, price: itemPrice};
+
+    localStorage.setItem("Order", JSON.stringify(Order));[Order];
+}
+

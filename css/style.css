@@ -55,6 +55,37 @@ footer .socials a img{
 .gmap_canvas{
     width: 600px
 }
+.card:hover{
+    border:2px saddlebrown;
+    transition: 1s ease;
+}
+.card-img-top:hover{
+    opacity:.8;
+    transition: 1s ease;
+}
+.contactUs{
+    margin-left: -5%;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+.footer ul li img:hover{
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 500ms ease;
+}
+.btn-primary{
+    color: black;
+    background-color:rgb(209, 170, 140);
+    border:black;
+}
+.btn-primary:hover{
+    background-color:brown;
+}
+.drinks{
+    margin-bottom:3%;
+}
 @media only screen and (max-width: 915px) {
    .ingredients{ 
         flex-wrap:wrap ;
@@ -66,5 +97,10 @@ footer .socials a img{
     .gmap_canvas{
         width: 260px;
     }
-    
+    .contactUs{
+        margin-left: -20%;
+    }
+    .thirdSection{
+        flex-wrap: wrap;
+    }
   }
