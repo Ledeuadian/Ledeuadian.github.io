@@ -89,7 +89,7 @@ a{
 @media only screen and (max-width: 915px) {
    .ingredients{ 
         flex-wrap:wrap ;
-        margin-bottom:150px;
+        margin-bottom:250px;
     }
     footer{
         position:relative
@@ -102,5 +102,8 @@ a{
     }
     .thirdSection{
         flex-wrap: wrap;
+    }
+    .testimony{
+        display:none;
     }
   }

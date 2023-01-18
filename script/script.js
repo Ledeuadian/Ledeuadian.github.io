@@ -31,6 +31,15 @@ itemImage = items[0].getAttribute("src");
 itemPrice = items[3].innerText; 
 Order = {name: itemsName, image: itemImage, price: itemPrice};
 
-    localStorage.setItem("Order", JSON.stringify(Order));[Order];
-}
 
+for (let i = 0; i <= localStorage.length; i++) {
+    number = i;
+}
+    localStorage.setItem("Order"+number, (Order));
+};
+
+function displayToCart(){
+let orderGet = localStorage.getItem('Order1');
+console.log(orderGet.Order);
+
+};
