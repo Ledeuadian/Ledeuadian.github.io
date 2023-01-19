@@ -60,12 +60,12 @@
       </nav>
     </section>
     <main class="container">
-    <div class="ingredients d-flex justify-content-center">
+    <div class="ingredients d-flex justify-content-center" id="foods2Item">
         <div>
             <img src="/images/Drinks/Pizzas.jpg" style="width:30rem; height:100%; border-radius:50px;" class="img-fluid">
         </div>
         <div class="d-flex flex-column text-center bg-light">
-            <h3>Pizza</h3><br>
+            <h3 id="foods2Name">Pizza</h3><br>
             <p class="card-text"> A dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked. called also pizza pie.</p>
             <h2>Ingredients</h2>
             <ul class="text-start">
@@ -73,8 +73,8 @@
                 <li>Ingredient 2</li>
                 <li>Ingredient 3</li>
             </ul>
-            <h3 class="text-start p-5">₱100</h3>
-            <button class="btn-primary mt-auto mx-auto bg-mac">Add to Cart</button>
+            <h3 class="text-start p-5">₱<span id="foods2Price">100</span></h3>
+            <button class="btn-primary my-auto mx-auto bg-mac" id="foods2" onclick="addToCart(this)">Add to Cart</button>
         </div>
     </div>    
     </main>
@@ -119,6 +119,7 @@
         </div>
       </div>
     </div>
+    <script src="/script/script.js"></script>
     <script src="script/bootstrap.bundle.min.js"></script>
     <script src="//code.tidio.co/oewlps7fmiwubdnqhkcb5jhb9nmyfw1z.js" async></script>
 </body>

@@ -107,3 +107,8 @@ a{
         display:none;
     }
   }
+  @media only screen and (max-width: 1440px) {
+    .ingredients{ 
+         margin-bottom:250px;
+    }
+   }
