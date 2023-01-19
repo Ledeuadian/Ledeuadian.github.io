@@ -71,8 +71,21 @@ for (let i = 1; i <= localStorage.length; i++) {
 `;
 }
 cartContent.querySelector("tbody").innerHTML = productMarkup;
-
 };
 
 
 
+let count = 0;
+
+const counter = document.getElementById('counter');
+document.getElementById('drinks1').addEventListener('click', _event =>{
+  const cl = counter.classList;
+  const c = 'animated-counter';
+  count++;
+
+  counter.innerText = count;
+  cl.remove(c, cl.contains(c));
+  setTimeout(() =>
+  counter.classList.add('animated-counter')
+  ,1)
+})
