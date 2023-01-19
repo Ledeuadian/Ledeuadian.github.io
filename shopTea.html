@@ -128,17 +128,29 @@
     </footer>
 
   <!--===============================off Canvass================================================================-->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="shopping-cart" class="shopping-cart-container">
+        <table class="table table-hover d-flex flex-column justify-content-evenly" id='cart-content'>
+          <thead>
+            <tr class="table d-flex justify-content-evenly ">
+              <th scope="col">Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Ammount</th>
+              <th scope="col" colspan="2"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
-      <div class="offcanvas-body">
-    
-        </div>
       </div>
     </div>
-    <script src="script/bootstrap.bundle.min.js"></script>
-    <script src="//code.tidio.co/oewlps7fmiwubdnqhkcb5jhb9nmyfw1z.js" async></script>
+  </div>
+  <script src="script/bootstrap.bundle.min.js"></script>
 </body>
 </html>

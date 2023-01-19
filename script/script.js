@@ -36,49 +36,16 @@ for (let i = 0; i <= localStorage.length; i++) {
     number = i;
 }
     localStorage.setItem("Order"+number, JSON.stringify(Order));
-};
+    alert('Item Successfuly Added To Cart');
 
 
-//Display to cart
+//Cart Counter
 
-const cartContent = document.querySelector("#cart-content");
-
-
-function displayToCart(){ 
-
-productMarkup = '';
-
-for (let i = 1; i <= localStorage.length; i++) {
-   OrderNum = 'Order'+i;
-   let orderGet = localStorage.getItem('Order1');
-   let pullName = JSON.parse(orderGet).name;
-   let pullImage = JSON.parse(orderGet).image;
-   let pullPrice = JSON.parse(orderGet).price;
-
-   productMarkup +=
-`
-  <tr>
-  <td>
-    <img src="${pullImage}" alt="${pullName}" width="120" style="width:6rem; border:1px solid black; border-radius:30px">
-  </td>
-  <td>
-    ${pullName}
-  </td>
-  <td>₱${pullPrice}</td>
-  <td><input type="number" style="width:40px;"></td>
-  <td><button type="button" class="bg-danger" style="width:30px;"> X </button></td>
-  </tr>
-`;
-}
-cartContent.querySelector("tbody").innerHTML = productMarkup;
-};
-
-
-
-let count = 0;
+let count = localStorage.length - 1;
+console.log(count);
 
 const counter = document.getElementById('counter');
-document.getElementById('drinks1').addEventListener('click', _event =>{
+document.getElementById(id);
   const cl = counter.classList;
   const c = 'animated-counter';
   count++;
@@ -88,4 +55,47 @@ document.getElementById('drinks1').addEventListener('click', _event =>{
   setTimeout(() =>
   counter.classList.add('animated-counter')
   ,1)
-})
+};
+
+//Display to cart
+
+const cartContent = document.querySelector("#cart-content");
+
+
+function displayToCart(){ 
+  cartItems = '';
+  var counters=0;
+
+  for(var key in localStorage){
+    if(key.includes("Order") == true){
+      counters+=1;
+    }
+  }
+
+
+ 
+for (let i = 0; i < counters; i++) {
+   let OrderNum = `Order`+i;
+   let orderGet = localStorage.getItem(OrderNum);
+   let pullName = JSON.parse(orderGet).name;
+   let pullImage = JSON.parse(orderGet).image;
+   let pullPrice = JSON.parse(orderGet).price;
+
+   cartItems +=
+`
+  <tr>
+  <td>
+    <img src="${pullImage}" alt="${pullName}" width="120" style="width:6rem; border:1px solid black; border-radius:30px">
+  </td>
+  <td>
+    ${pullName}
+  </td>
+  <td>₱${pullPrice}</td>
+  <td><input type="number" style="width:40px;" value="1"></td>
+  <td><button type="button" class="bg-danger" style="width:30px;"> X </button></td>
+  </tr>
+`;
+}
+cartContent.querySelector("tbody").innerHTML = cartItems;
+};
+
